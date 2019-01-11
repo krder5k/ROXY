@@ -1,0 +1,37 @@
+<!--
+#A3586D
+#5C4A7
+#F3B05A
+#F4F4F4 -->
+
+.yell {
+    background-color: yellow;
+}
+
+.bell {
+    background-color: blue;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+div {
+    display: flex;
+    flex-grow: 1;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: start;
+}
+
+#logo {
+    border-right: 2px solid black;
+    flex-grow: 0;
+}
