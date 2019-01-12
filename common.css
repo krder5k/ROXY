@@ -41,6 +41,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    padding: 12px;
 }
 
 /* HEADER */
@@ -51,15 +52,19 @@ header {
     border-radius: 8px;
 }
 
-#frontpic {
-    width: 100%;
+@media only screen and (max-width: 480px) {
+    #frontpic {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    #frontpic {
+        width: 100%;
+    }
 }
 
 header > div {
-    position: absolute;
-    top: 2%;
-    left: 2%;
-    width: 70%;
     color: white;
     background-color: black;
     border-radius: 8px;
@@ -80,11 +85,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    padding: 0 12px 12px 12px;
 }
 
 main > * {
-    margin: 1% 0 1% 0;
+    margin: 8px 0 8px 0;
 }
 
 main > section:first-child {
@@ -133,11 +137,4 @@ main > section:first-child {
 
 #prices {
     grid-area: prices;
-}
-
-#picture {
-    grid-area: pframe;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
 }
