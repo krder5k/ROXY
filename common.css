@@ -46,7 +46,7 @@ main {
 
 header {
     grid-area: header;
-    background-image: radial-gradient(circle, white, #8a769f);
+    /*background-image: radial-gradient(circle, white, #8a769f);*/
     padding: 0 100px 10px 100px;
     border-radius: 10px;
 }
