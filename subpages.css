@@ -30,8 +30,13 @@ main > h1 {
     text-align: center;
 }
 
-main > p {
+main p {
     margin: 0;
+}
+
+main ol {
+    padding-left: 30px;
+    text-align: start;
 }
 
 body {
