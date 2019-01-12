@@ -1,2 +1,0 @@
-# ROZY
-Temporary repository.
