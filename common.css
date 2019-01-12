@@ -1,8 +1,15 @@
 <!--
-#A3586D
-#5C4A7
+@import url('https://fonts.googleapis.com/css?family=Spectral');
+
+#A3586D red-ish
+#5C4A70 blue-ish
+#F3B05A yellow-ish
+#F4F4F4 white-ish
+
+#5C4A70
 #F3B05A
-#F4F4F4 -->
+#F4F4F4
+-->
 
 .yell {
     background-color: yellow;
@@ -12,26 +19,55 @@
     background-color: blue;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-grow: 1;
+body {
+    background-color: #F4F4F4;
+    font-family: 'Spectral', 'Trebuchet MS', serif;
 }
 
-div {
-    display: flex;
-    flex-grow: 1;
+p {
+    margin: 0;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: start;
+.centered {
+    text-align: center;
 }
 
-#logo {
-    border-right: 2px solid black;
-    flex-grow: 0;
+main {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+            "header header"
+            "content aside";
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    padding-bottom: 20px;
+}
+
+header {
+    grid-area: header;
+    background-image: radial-gradient(circle, white, #8a769f);
+    padding: 0 100px 10px 100px;
+    border-radius: 10px;
+}
+
+#slogan {
+    margin-bottom: 0;
+}
+
+#content {
+    grid-area: content;
+    background-image: linear-gradient(#ffe289, #F3B05A);
+    background-color: #F3B05A;
+    border-radius: 6px;
+    padding: 10px 40px 10px 10px;
+}
+
+aside {
+    grid-area: aside;
+    background-image: linear-gradient(#ffe289, #F3B05A);
+    background-color: #ffe289;
+    border-width: 1px;
+    border-radius: 6px;
+    padding: 10px 10px 10px 10px;
 }
