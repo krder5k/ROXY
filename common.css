@@ -1,83 +1,90 @@
-<!--
 @import url('https://fonts.googleapis.com/css?family=Spectral');
 
-#A3586D red-ish
-#5C4A70 blue-ish
-#F3B05A yellow-ish
-#F4F4F4 white-ish
-
-#5C4A70
-#F3B05A
-#F4F4F4
--->
-
-.yell {
-    background-color: yellow;
-}
-
-.bell {
-    background-color: blue;
-}
-
 body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
     background-color: #F4F4F4;
     font-family: 'Spectral', 'Trebuchet MS', serif;
+    background-image: linear-gradient(to top, #F3B05A, #ffe289);
 }
 
+body * {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: white;
+}
 
 .centered {
     text-align: center;
 }
 
 .card {
-    padding: 0 12px 12px 12px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    box-shadow: 1px 5px 5px grey, -1px 0px 5px grey;
-}
-
-#container {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 1px 5px 5px grey, -1px 0 5px grey;
+    background-color: #d6869b;
+    margin-bottom: 14px;
     padding: 12px;
 }
 
 /* HEADER */
 
+#logo {
+    margin-top: 14px;
+    margin-bottom: 14px;
+    align-self: center;
+    order: 1;
+}
+
+#frontpic {
+    display: none;
+}
+
 header {
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-}
-
-@media only screen and (max-width: 480px) {
-    #frontpic {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 480px) {
-    #frontpic {
-        width: 100%;
-    }
-}
-
-header > div {
-    color: white;
-    /*background-image: linear-gradient(#a3586d, #722c42);*/
-    background-color: #a3586d;
-    border-radius: 8px;
     padding: 12px;
-}
-
-#slogan {
-    margin-top: 8px;
+    margin-bottom: 14px;
+    color: white;
+    background-color: #a3586d;
+    order: 2;
 }
 
 #slogandesc {
     font-size: 14px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 14px;
+    order: 3;
+}
+
+#navlist {
+    list-style-type: none;
+    padding: 0;
+    background-color: #722c42;
+}
+
+#navlist a {
+    display: block;
+    padding: 10px 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+#navlist li:hover {
+    background-color: #a3586d;
+}
+
+header, nav, main {
+    margin-right: 14px;
+    margin-left: 14px;
 }
 
 /* MAIN CONTENT*/
@@ -86,14 +93,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-}
-
-main > * {
-    margin: 8px 0 8px 0;
-}
-
-main > section:first-child {
-    background-image: linear-gradient(white, #F4F4F4);
+    order: 4;
 }
 
 #dates {
@@ -107,35 +107,77 @@ main > section:first-child {
     border-radius: 4px;
     text-align: center;
     padding: 5px;
-}
-
-#dates tr {
-    width: auto;
+    border: 1px solid white;
 }
 
 #dates caption p {
     font-size: 12px;
-    background-image: linear-gradient(#F4F4F4, #F4F4F4);
 }
 
+/* hides empty cells */
 #dates tr > td:empty {
     border: 0;
     background-image: none;
     background-color: transparent;
 }
 
-#reasons {
-    grid-area: reasons;
-}
-
 #reasons > ul {
     padding-right: 30px;
 }
 
-#reasons > ul > li > p {
+#reasons p {
     font-size: 14px;
 }
 
-#prices {
-    grid-area: prices;
+#ytframe {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+    nav {
+        position: fixed;
+        width: 100%;
+        margin: 0;
+        order: 1;
+    }
+
+    #navlist {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    #navlist li {
+        float: left;
+        font-weight: bolder;
+    }
+
+    #navlist li:nth-last-child(1), #navlist li:nth-last-child(2) {
+        float: right;
+    }
+
+    #logo {
+        position: absolute;
+        align-self: start;
+        margin-top: 60px;
+    }
+
+    header {
+        margin-top: -100px;
+        order: 3;
+    }
+
+    #frontpic {
+        display: block;
+        width: 100%;
+        margin-bottom: 12px;
+        border-radius: 0;
+        order: 2;
+    }
+
+    #ytframe {
+        display: block;
+        margin-bottom: 14px;
+    }
 }
