@@ -43,13 +43,68 @@ body {
     background-color: #F3B05A;
 }
 
+#formmain {
+    width: 70%;
+    align-self: center;
+}
+
+main form {
+    text-align: start;
+}
+
+label {
+    font-size: 18px;
+}
+
+input[type=text] {
+    display: block;
+    color: black;
+    width: 100%;
+    margin: 8px 0;
+    font-size: 19px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    display: block;
+    background-color: #722c42;
+    border: none;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    font-size: 19px;
+    margin-top: 20px;
+}
+
+#logo-mid {
+    margin-top: 14px;
+    margin-bottom: 14px;
+    align-self: center;
+    order: 1;
+}
+
 @media only screen and (min-width: 768px) {
 
     #subnav {
-        margin-top: -180px;
+        margin-top: -90px;
     }
 
     main {
         text-align: center;
+    }
+
+    #formmain {
+        align-self: start;
+        margin-top: -70%;
+        width: 30%;
+    }
+
+    #logo-mid {position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
     }
 }

@@ -2,15 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ROZY Book now</title>
+    <title>Accommodation</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="common.css" rel="stylesheet" type="text/css">
+    <link href="subpages.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
+<nav>
+    <ul id="navlist">
+        <li><a href="about/why.html">About Us</a></li>
+        <li><a href="courses/surfing.html">Courses</a></li>
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="accom.html">Accommodation</a></li>
+        <li><a href="booking.html" class="selected">Book Now</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+    </ul>
+</nav>
+
+<img id="frontpic" src="assets/images/Book_now.jpg" width="100%" alt=""/>
+<a href="index.html" id="logo-mid"><img src="assets/images/logo.svg" alt="ROZY Logo" width="250px" /></a>
+
+<main id="formmain" class="card">
+    <form>
+        <label for="fname">First Name</label> <input type="text" id="fname"/>
+        <label for="surname">Last Name</label> <input type="text" id="surname"/>
+        <label for="ctype">Course Type</label> <input type="text" id="ctype"/>
+        <label for="atype">Accommodation Type</label> <input type="text" id="atype"/>
+        <label for="slevel">Skill Level</label> <input type="text" id="slevel"/>
+        <label for="sdate">Start Date</label> <input type="text" id="sdate"/>
+        <label for="edate">End Date</label> <input type="text" id="edate"/>
+        <label for="age">Age</label> <input type="text" id="age"/>
+        <label for="email">E-Mail</label> <input type="text" id="email"/>
+        <label for="phone">Phone</label> <input type="text" id="phone"/>
+        <input type="submit" value="Submit">
+    </form>
+</main>
 <!-- TODO Blocks to input User's name, surname, course type, type of accommodation,
     surf/windsurf level, starting and ending of the learning period, age, e-mail
     and mobile phone number. -->
-
-<img src="/assets/images/Book_now.jpg" alt="" />
 
 </body>
 </html>
