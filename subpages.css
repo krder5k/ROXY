@@ -83,6 +83,20 @@ input[type=submit] {
     order: 1;
 }
 
+#contact > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact section {
+    background-color: #722c42;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 14px;
+    align-self: center;
+    width: auto;
+}
+
 @media only screen and (min-width: 768px) {
 
     #subnav {
@@ -96,7 +110,7 @@ input[type=submit] {
     #formmain {
         align-self: start;
         margin-top: -70%;
-        width: 30%;
+        width: 0%;
     }
 
     #logo-mid {position: absolute;
@@ -106,5 +120,12 @@ input[type=submit] {
         margin-left: auto;
         margin-right: auto;
         width: 250px;
+    }
+
+    #contact {
+        margin-top: -800px;
+        align-self: center;
+        width: 40%;
+        border-radius: 8px;
     }
 }
