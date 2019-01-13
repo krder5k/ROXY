@@ -97,6 +97,11 @@ input[type=submit] {
     width: auto;
 }
 
+#sinfo {
+    border: 4px dotted white;
+    padding: 14px;
+}
+
 @media only screen and (min-width: 768px) {
 
     #subnav {
