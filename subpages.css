@@ -103,6 +103,11 @@ input[type=submit] {
     margin-bottom: 14px;
 }
 
+#rentals > ul {
+    list-style: none;
+    padding: 0;
+}
+
 @media only screen and (min-width: 768px) {
 
     #subnav {
