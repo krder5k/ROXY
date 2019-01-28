@@ -1,0 +1,26 @@
+
+header 	{ order: 0; }
+nav 	{ order: 1; }
+main 	{ order: 2; }
+footer	{ order: 3; }
+
+body {
+	background-color: #F3B05A;
+	background-image: linear-gradient(to top, #F3B05A, #ffe289);
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+}
+
+#logo {
+	align-self: center;
+	order: 0;
+}
+
+#thumbnail {
+	display: none;
+}
