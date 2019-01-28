@@ -1,142 +1,143 @@
 .selected {
-    background-color: #a3586d;
+	background-color: #a3586d;
 }
 
 #subnav {
-    order: 3;
+	order: 3;
 }
 
 #subnav ul {
-    list-style-type: none;
-    margin: 0 14px 14px 14px;
-    padding: 0;
-    background-color: #722c42;
+	background-color: #722c42;
+	list-style-type: none;
+	margin: 0 14px 14px 14px;
+	padding: 0;
 }
 
 #subnav a {
-    display: block;
-    padding: 10px 10px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
+	color: white;
+	display: block;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
 }
 
 #subnav li:hover {
-    background-color: #a3586d;
+	background-color: #a3586d;
 }
 
 main > h1 {
-    margin: 0;
-    text-align: center;
+	margin: 0;
+	text-align: center;
 }
 
 main p {
-    margin: 0;
+	margin: 0;
 }
 
 main ol {
-    padding-left: 30px;
-    text-align: start;
+	padding-left: 30px;
+	text-align: start;
 }
 
 body {
-    background-color: #F3B05A;
+	background-color: #F3B05A;
 }
 
 #formmain {
-    width: 70%;
-    align-self: center;
+	align-self: center;
+	width: 70%;
 }
 
 main form {
-    text-align: start;
+	text-align: start;
 }
 
 label {
-    font-size: 18px;
+	font-size: 18px;
 }
 
 input[type=text] {
-    display: block;
-    color: black;
-    width: 100%;
-    margin: 8px 0;
-    font-size: 19px;
-    box-sizing: border-box;
+	box-sizing: border-box;
+	color: black;
+	display: block;
+	font-size: 19px;
+	margin: 8px 0;
+	width: 100%;
 }
 
 input[type=submit] {
-    display: block;
-    background-color: #722c42;
-    border: none;
-    text-align: center;
-    width: 100%;
-    height: 40px;
-    font-size: 19px;
-    margin-top: 20px;
+	background-color: #722c42;
+	border: none;
+	display: block;
+	font-size: 19px;
+	height: 40px;
+	margin-top: 20px;
+	text-align: center;
+	width: 100%;
 }
 
 #logo-mid {
-    margin-top: 14px;
-    margin-bottom: 14px;
-    align-self: center;
-    order: 1;
+	align-self: center;
+	margin-bottom: 14px;
+	margin-top: 14px;
+	order: 1;
 }
 
 #contact > div {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 #contact section {
-    background-color: #722c42;
-    border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 14px;
-    align-self: center;
-    width: auto;
+	align-self: center;
+	background-color: #722c42;
+	border-radius: 8px;
+	margin-bottom: 14px;
+	padding: 10px;
+	width: auto;
 }
 
 #sinfo {
-    border: 4px dotted white;
-    padding: 14px;
-    margin-bottom: 14px;
+	border: 4px dotted white;
+	margin-bottom: 14px;
+	padding: 14px;
 }
 
 #rentals > ul {
-    list-style: none;
-    padding: 0;
+	list-style: none;
+	padding: 0;
 }
 
 @media only screen and (min-width: 768px) {
-
-    #subnav {
-        margin-top: -90px;
-    }
-
-    main {
-        text-align: center;
-    }
-
-    #formmain {
-        align-self: start;
-        margin-top: -70%;
-        width: 30%;
-    }
-
-    #logo-mid {position: absolute;
-        top: 90px;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        width: 250px;
-    }
-
-    #contact {
-        margin-top: -800px;
-        align-self: center;
-        width: 40%;
-        border-radius: 8px;
-    }
+	
+	#subnav {
+		margin-top: -90px;
+	}
+	
+	main {
+		text-align: center;
+	}
+	
+	#formmain {
+		align-self: start;
+		margin-top: -70%;
+		width: 30%;
+	}
+	
+	#logo-mid {
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
+		position: absolute;
+		right: 0;
+		top: 90px;
+		width: 250px;
+	}
+	
+	#contact {
+		align-self: center;
+		border-radius: 8px;
+		margin-top: -800px;
+		width: 40%;
+	}
 }

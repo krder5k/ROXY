@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Spectral');
 
 body {
-    margin: 0;
-    padding: 0;
+    background-color: #F4F4F4;
+    background-image: linear-gradient(to top, #F3B05A, #ffe289);
     display: flex;
     flex-direction: column;
-    background-color: #F4F4F4;
     font-family: 'Spectral', 'Trebuchet MS', serif;
-    background-image: linear-gradient(to top, #F3B05A, #ffe289);
+    margin: 0;
+    padding: 0;
 }
 
 body * {
-    -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
     border-radius: 4px;
     color: white;
 }
@@ -22,21 +22,19 @@ body * {
 }
 
 .card {
-    -webkit-border-radius: 4px;
+    background-color: #d6869b;
     -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
     border-radius: 4px;
     box-shadow: 1px 5px 5px grey, -1px 0 5px grey;
-    background-color: #d6869b;
     margin-bottom: 14px;
     padding: 12px;
 }
 
-/* HEADER */
-
 #logo {
-    margin-top: 14px;
-    margin-bottom: 14px;
     align-self: center;
+    margin-bottom: 14px;
+    margin-top: 14px;
     order: 1;
 }
 
@@ -45,11 +43,11 @@ body * {
 }
 
 header {
-    padding: 12px;
-    margin-bottom: 14px;
-    color: white;
     background-color: #a3586d;
+    color: white;
+    margin-bottom: 14px;
     order: 2;
+    padding: 12px;
 }
 
 #slogandesc {
@@ -59,21 +57,21 @@ header {
 nav {
     display: flex;
     flex-direction: column;
-    text-align: center;
     margin-bottom: 14px;
     order: 3;
+    text-align: center;
 }
 
 #navlist {
+    background-color: #722c42;
     list-style-type: none;
     padding: 0;
-    background-color: #722c42;
 }
 
 #navlist a {
+    color: white;
     display: block;
     padding: 10px 10px;
-    color: white;
     text-align: center;
     text-decoration: none;
 }
@@ -83,16 +81,14 @@ nav {
 }
 
 header, nav, main {
-    margin-right: 14px;
     margin-left: 14px;
+    margin-right: 14px;
 }
 
-/* MAIN CONTENT*/
-
 main {
+    align-items: stretch;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
     order: 4;
 }
 
@@ -101,13 +97,13 @@ main {
 }
 
 #dates tr td {
-    width: 3em;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    text-align: center;
-    padding: 5px;
     border: 1px solid white;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+    width: 3em;
 }
 
 #dates caption p {
@@ -116,9 +112,9 @@ main {
 
 /* hides empty cells */
 #dates tr > td:empty {
-    border: 0;
-    background-image: none;
     background-color: transparent;
+    background-image: none;
+    border: 0;
 }
 
 #reasons > ul {
@@ -134,36 +130,36 @@ main {
 }
 
 footer {
+    background-color: #722c42;
+    bottom: 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    background-color: #722c42;
-    bottom: 0;
     margin: 0;
-    padding: 7px;
     order: 5;
+    padding: 7px;
 }
 
 footer a {
-    margin-left: 14px;
-    text-decoration: none;
     border: 1px dotted white;
+    margin-left: 14px;
     padding: 7px;
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 768px) {
 
     nav {
-        position: fixed;
-        width: 100%;
         margin: 0;
         order: 1;
+        position: fixed;
+        width: 100%;
     }
 
     #navlist {
         margin: 0;
-        padding: 0;
         overflow: hidden;
+        padding: 0;
     }
 
     #navlist li {
@@ -176,9 +172,9 @@ footer a {
     }
 
     #logo {
-        position: absolute;
         align-self: start;
         margin-top: 60px;
+        position: absolute;
     }
 
     header {
@@ -187,11 +183,11 @@ footer a {
     }
 
     #frontpic {
-        display: block;
-        width: 100%;
-        margin-bottom: 12px;
         border-radius: 0;
+        display: block;
+        margin-bottom: 12px;
         order: 2;
+        width: 100%;
     }
 
     #ytframe {
