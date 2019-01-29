@@ -5,7 +5,7 @@ var logoRotation = [
 
 var logoRotationTiming = {
     duration: 200,
-    iterations: Infinity
+    iterations: 1
 };
 
 function rotateLogo() {
