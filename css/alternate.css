@@ -16,8 +16,9 @@ footer {
 	order: 3;
 }
 
-#breadcrumb {
-
+#breadcrumb ul li a {
+	color: #F4F4F4;
+	text-decoration: none;
 }
 
 body {

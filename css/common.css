@@ -16,6 +16,11 @@ footer {
 	order: 3;
 }
 
+#breadcrumb ul li a {
+	color: #F4F4F4;
+	text-decoration: none;
+}
+
 body {
 	background-color: #F3B05A;
 	background-image: linear-gradient(to top, #F3B05A, #ffe289);
