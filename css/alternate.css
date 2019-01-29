@@ -37,7 +37,18 @@ header {
 	flex-direction: column;
 }
 
+@keyframes example {
+	from {
+		background-color: #9E9E9E;
+	}
+	to {
+		background-color: #F4F4F4;
+	}
+}
+
 #logo {
+	animation-duration: 10s;
+	animation-name: example;
 	background-color: #CFCFCF;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
