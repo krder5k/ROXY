@@ -16,39 +16,49 @@ footer {
 	order: 3;
 }
 
+body {
+	background-color: #F3B05A;
+	background-image: linear-gradient(to top, #F3B05A, #ffe289);
+	color: #F4F4F4;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Spectral', 'Trebuchet MS', serif;
+	margin: 0;
+	min-height: 100vh;
+}
+
+header {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
 #logo {
-	align-self: center;
-	background-color: white;
-	-moz-border-radius: 200px;
-	-webkit-border-radius: 200px;
-	border-radius: 200px;
-	margin-bottom: 20px;
-	margin-top: 20px;
-	max-width: 400px;
-	min-width: 100px;
+	background-color: #F4F4F4;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	height: 60vw;
+	margin: 30px;
+	max-height: 600px;
+	max-width: 600px;
+	min-height: 150px;
+	min-width: 150px;
 	opacity: 0.9;
-	padding-top: 12px;
-	width: 50%;
-}
-
-#logo img {
-	width: 100%;
-}
-
-#thumbnail {
-	display: none;
+	width: 60vw;
 }
 
 nav {
 	align-self: center;
 	background-color: transparent;
+	top: 0;
 	width: 40%;
 }
 
 nav ul {
 	list-style-type: none;
 	margin: 0;
-	padding-left: 0;
+	padding: 0;
 }
 
 nav li {
@@ -62,25 +72,11 @@ nav li a {
 	text-decoration: none;
 }
 
-body {
-	background-color: #F3B05A;
-	background-image: linear-gradient(to top, #F3B05A, #ffe289);
-	color: #F4F4F4;
-	display: flex;
-	flex-direction: column;
-	font-family: 'Spectral', 'Trebuchet MS', serif;
-	margin: 0;
-}
-
-header {
-	display: flex;
-	flex-direction: column;
-}
-
 main {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: auto;
 }
 
 main section {
@@ -134,17 +130,20 @@ footer {
 }
 
 footer li:nth-of-type(2) {
+	bottom: 0;
 	margin-right: 10px;
 }
 
 footer li {
 	display: inline;
+	font-size: 17px;
 	list-style-type: none;
 	padding: 15px;
 }
 
 footer li a {
 	color: #F4F4F4;
+	font-weight: bold;
 	text-decoration: none;
 }
 
@@ -183,36 +182,34 @@ footer li a {
 		order: 1;
 	}
 	
+	nav {
+		background-color: #722C42;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		position: sticky;
+		width: 100%;
+	}
+	
+	nav ul li {
+		float: left;
+	}
+	
 	nav hr {
 		display: none;
 	}
 	
 	nav li a {
 		color: #F4F4F4;
-	}
-	
-	nav {
-		background-color: #722C42;
-		position: fixed;
-		width: 100%;
-	}
-	
-	#leftnav li {
-		float: left;
-		padding: 15px;
-	}
-	
-	#rightnav li {
-		float: right;
-		padding: 15px;
-	}
-	
-	#thumbnail {
 		display: block;
+		padding: 15px;
 	}
 	
-	#logo {
-		margin-top: -58%;
+	body {
+		background-image: url(../assets/images/jpg/home.jpg), linear-gradient(to top, #F3B05A, #ffe289);
+		background-position-y: 56px;
+		background-repeat: no-repeat;
+		background-size: contain;
 	}
 	
 	main section {
