@@ -1,208 +1,251 @@
 @import url('https://fonts.googleapis.com/css?family=Spectral');
 
-body {
-    background-color: #F4F4F4;
-    background-image: linear-gradient(to top, #F3B05A, #ffe289);
-    display: flex;
-    flex-direction: column;
-    font-family: 'Spectral', 'Trebuchet MS', serif;
-    margin: 0;
-}
-
-body * {
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    color: white;
+header {
+	order: 0;
 }
 
 nav {
-    order: 1;
-}
-
-header {
-    order: 0;
+	order: 1;
 }
 
 main {
-    order: 2;
+	order: 2;
 }
 
 footer {
-    order: 3;
+	order: 3;
 }
 
-.centered {
-    text-align: center;
+body {
+	background-color: #F3B05A;
+	background-image: linear-gradient(to top, #F3B05A, #ffe289);
+	color: #F4F4F4;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Spectral', 'Trebuchet MS', serif;
+	margin: 0;
+	min-height: 100vh;
 }
 
-.rb {
-    background-color: #d6869b;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    box-shadow: 1px 5px 5px grey, -1px 0 5px grey;
-    margin-bottom: 14px;
-    padding: 12px;
+header {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
 }
 
 #logo {
-    align-self: center;
-    margin-bottom: 14px;
-    margin-top: 14px;
-}
-
-#frontpic {
-    display: none;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    margin-bottom: 14px;
-    padding: 12px;
-}
-
-#slogandesc {
-    font-size: 14px;
+	background-color: #F4F4F4;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	height: 50vw;
+	margin: 30px;
+	max-height: 600px;
+	max-width: 600px;
+	min-height: 150px;
+	min-width: 150px;
+	opacity: 0.9;
+	width: 50vw;
 }
 
 nav {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 14px;
-    text-align: center;
+	align-self: center;
+	background-color: transparent;
+	top: 0;
+	width: 40%;
 }
 
-#navlist {
-    background-color: #722c42;
-    list-style-type: none;
-    padding: 0;
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
-#navlist a {
-    color: white;
-    display: block;
-    padding: 10px 10px;
-    text-align: center;
-    text-decoration: none;
+nav li {
+	font-size: 17px;
+	text-align: center;
 }
 
-#navlist li:hover {
-    background-color: #a3586d;
-}
-
-header, nav, main {
-    margin-left: 14px;
-    margin-right: 14px;
+nav li a {
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 main {
-    align-items: stretch;
-    display: flex;
-    flex-direction: column;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: auto;
 }
 
-#dates {
-    table-layout: fixed;
+main section {
+	background-color: #A3586D;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
+	margin: 10px 0 10px 0;
+	max-width: 1080px;
+	padding: 20px;
+	width: 85%;
 }
 
-#dates tr td {
-    border: 1px solid white;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    padding: 5px;
-    text-align: center;
-    width: 3em;
+#calendar {
+	text-align: center;
 }
 
-#dates caption p {
-    font-size: 12px;
+#calendar table {
+	margin-top: 10px;
 }
 
-/* hides empty cells */
-#dates tr > td:empty {
-    background-color: transparent;
-    background-image: none;
-    border: 0;
+#reasons {
+	border-top: 1px solid #F4F4F4;
+	padding-top: 20px;
 }
 
-#reasons > ul {
-    padding-right: 30px;
+h1, h2 {
+	margin-bottom: 0;
+	margin-top: 0;
 }
 
-#reasons p {
-    font-size: 14px;
+#slogan {
+	background-color: #A3586D;
+	text-align: center;
 }
 
-#ytframe {
-    display: none;
+#video {
+	background-color: black;
+	height: 56.25vh;
+	margin-bottom: 10px;
+	max-width: 1080px;
+	width: 85%;
 }
 
 footer {
-    background-color: #722c42;
-    bottom: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 7px;
+	background-color: #722C42;
+	display: flex;
+	flex-direction: row-reverse;
 }
 
-footer a {
-    border: 1px dotted white;
-    margin-left: 14px;
-    padding: 7px;
-    text-decoration: none;
+footer li:nth-of-type(2) {
+	bottom: 0;
+	margin-right: 10px;
 }
 
-/*@media only screen and (min-width: 768px) {
+footer li {
+	display: inline;
+	font-size: 17px;
+	list-style-type: none;
+	padding: 15px;
+}
 
-    nav {
-        margin: 0;
-        order: 1;
-        position: fixed;
-        width: 100%;
-    }
+footer li a {
+	color: #F4F4F4;
+	font-weight: bold;
+	text-decoration: none;
+}
 
-    #navlist {
-        margin: 0;
-        overflow: hidden;
-        padding: 0;
-    }
+#dates {
+	table-layout: fixed;
+}
 
-    #navlist li {
-        float: left;
-        font-weight: bolder;
-    }
+#dates tr td {
+	border: 1px solid white;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	padding: 5px;
+	text-align: center;
+	width: 3em;
+}
 
-    #navlist li:nth-last-child(1), #navlist li:nth-last-child(2) {
-        float: right;
-    }
+#dates caption p {
+	font-size: 12px;
+}
 
-    #logo {
-        align-self: start;
-        margin-top: 60px;
-        position: absolute;
-    }
+/* hides empty cells */
+#dates td:empty {
+	background-color: transparent;
+	background-image: none;
+	border: 0;
+}
 
-    header {
-        margin-top: -100px;
-        order: 3;
-    }
+.card {
+	display: flex;
+	flex-direction: column;
+}
 
-    #frontpic {
-        border-radius: 0;
-        display: block;
-        margin-bottom: 12px;
-        order: 2;
-        width: 100%;
-    }
+.selected {
+	background-color: #A3586D;
+}
 
-    #ytframe {
-        display: block;
-        margin-bottom: 14px;
-    }
-}*/
+.dense p {
+	border-left: 4px solid #F4F4F4;
+	margin: 0 0 0 10%;
+	padding-left: 3%;
+}
+
+@media only screen and (min-width: 768px) {
+	
+	nav {
+		order: 0;
+	}
+	
+	header {
+		order: 1;
+	}
+	
+	nav {
+		background-color: #722C42;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		position: sticky;
+		width: 100%;
+	}
+	
+	nav ul li {
+		float: left;
+	}
+	
+	nav hr {
+		display: none;
+	}
+	
+	nav li a {
+		color: #F4F4F4;
+		display: block;
+		padding: 15px;
+	}
+	
+	body {
+		background-image: url(../assets/images/jpg/home.jpg), linear-gradient(to top, #F3B05A, #ffe289);
+		background-position-y: 56px;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	
+	main > section {
+		flex-direction: row;
+	}
+	
+	#calendar {
+		flex-basis: 350px;
+		margin-right: 20px;
+		text-align: center;
+	}
+	
+	#calendar table {
+		margin-top: 10px;
+	}
+	
+	#reasons {
+		border-left: 1px solid #F4F4F4;
+		border-top: none;
+		flex-shrink: 1.75;
+		padding-left: 20px;
+		padding-top: 0;
+	}
+}
