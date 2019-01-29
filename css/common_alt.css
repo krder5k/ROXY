@@ -177,6 +177,16 @@ footer li a {
 	flex-direction: column;
 }
 
+.selected {
+	background-color: #A3586D;
+}
+
+.dense p {
+	border-left: 4px solid #F4F4F4;
+	margin: 0 0 0 10%;
+	padding-left: 3%;
+}
+
 @media only screen and (min-width: 768px) {
 	
 	nav {
@@ -217,7 +227,7 @@ footer li a {
 		background-size: contain;
 	}
 	
-	main section {
+	main > section {
 		flex-direction: row;
 	}
 	
