@@ -17,8 +17,7 @@ footer {
 }
 
 body {
-	background-color: #F3B05A;
-	background-image: linear-gradient(to top, #F3B05A, #ffe289);
+	background-color: #9E9E9E;
 	color: #F4F4F4;
 	display: flex;
 	flex-direction: column;
@@ -34,7 +33,7 @@ header {
 }
 
 #logo {
-	background-color: #F4F4F4;
+	background-color: #CFCFCF;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
@@ -80,7 +79,7 @@ main {
 }
 
 main section {
-	background-color: #A3586D;
+	background-color: #707070;
 	-moz-border-radius: 6px;
 	-webkit-border-radius: 6px;
 	border-radius: 6px;
@@ -111,20 +110,16 @@ h1, h2 {
 }
 
 #slogan {
-	background-color: #A3586D;
+	background-color: #707070;
 	text-align: center;
 }
 
 #video {
-	background-color: black;
-	height: 56.25vh;
-	margin-bottom: 10px;
-	max-width: 1080px;
-	width: 85%;
+	display: none;
 }
 
 footer {
-	background-color: #722C42;
+	background-color: #707070;
 	display: flex;
 	flex-direction: row-reverse;
 }
@@ -178,7 +173,7 @@ footer li a {
 }
 
 .selected {
-	background-color: #A3586D;
+	background-color: #707070;
 }
 
 .dense p {
@@ -198,7 +193,7 @@ footer li a {
 	}
 	
 	nav {
-		background-color: #722C42;
+		background-color: #707070;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -221,7 +216,7 @@ footer li a {
 	}
 	
 	body {
-		background-image: url(../assets/images/jpg/home.jpg), linear-gradient(to top, #F3B05A, #ffe289);
+		background-color: #9E9E9E;
 		background-position-y: 56px;
 		background-repeat: no-repeat;
 		background-size: contain;
